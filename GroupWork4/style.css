@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+   text-align: center;
+}
+
+#container {
+   display: flex;
+}
+
+#game {
+   flex: 3;
+   flex-direction: column;
+   align-items: center;
+   border: 3px solid black;
+}
+
+#status {
+   flex: 2;
+   align-items: center;
+   border: 3px solid black;
+}
+
+#gallows {
+   max-height: 410px;
+   min-height: 390px;
+   max-width: 260px;
+   min-width: 240px;
+}
+
+#wordToGuess {
+   margin: 20px;
+   font-size: 24px;
+}
+
+#letters {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 250px; /* Adjust based on the total width you prefer */
+   margin: 0 auto;
+ }
+ 
+ #letters button {
+   margin: 5px;
+   padding: 10px;
+   width: 40px;
+   height: 40px; /* Ensure buttons are square */
+ }
+ 
+div button {
+   padding: 10px;
+   margin: 5px;
+}
+
+.hidden {
+   visibility: hidden;
+}
